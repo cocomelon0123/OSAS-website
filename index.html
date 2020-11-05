@@ -41,6 +41,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#hunterNews">NEWS</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LOGIN</a>
+                </li>
             </ul>
         <!-- </div> -->
     </nav>
@@ -54,13 +57,20 @@
                 </p>
 
             </div>
-            <div class="animated fadeIn slideInRight slow col-6 carousel slide carousel-fade" data-ride="carousel" data-interval="6900"">
+            <div class="animated fadeIn slideInRight slow col-6 carousel slide carousel-fade" data-ride="carousel" data-interval="6900">
                 <div class="carousel-inner z-depth-3">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="img/NEU_Main2.jpg" alt="">
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/NEU_Main.jpg" alt="">
+                    <div class="carousel-item active">
+                        <img class="d-block  w-100" src="img/NEU_Main.jpg" alt="">
+                    </div>
+                    <div class="carousel-item active">
+                        <img class="d-block  w-100" src="img/neu3.jfif" alt="">
+                    </div>
+                    <div class="carousel-item active">
+                        <img class="d-block  w-100" src="img/neu4.jfif" alt="">    
+                    
                     </div>
                 </div>
             </div>
@@ -152,10 +162,19 @@
 
                   <div class="carousel-item active">
                     <img class="d-block" width="100%" height="120%" src="img/NEU_Main.jpg">
+                    
                   </div>
 
-                  <div class="carousel-item">
-                    <img class="d-block" width="100%" src="img/NEU_Main2.jpg">
+                  <div class="carousel-item active">
+                    <img class="d-block" width="100%" src="img/neu-phlsat.jpg">
+                  </div>
+
+                  <div class="carousel-item active">
+                    <img class="d-block" width="100%" src="img/neu4.jfif">
+                  </div>
+
+                  <div class="carousel-item active">
+                    <img class="d-block" width="100%" src="img/neu3.jfif">
                   </div>
 
                 </div>
@@ -174,10 +193,10 @@
     </div>
     <div class="row">
         <div class="social col-6">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/BdKduGtg6Se/"><i class="fab fa-instagram fa-3x"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/NEU_PH_official"><i class="fab fa-twitter fa-3x"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Neu.ph.official"><i class="fab fa-facebook-square fa-3x"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXEnDGnw3poCdV7VL-8YJ7w"><i class="fab fa-youtube fa-3x"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/BdKduGtg6Se/"><img src="img/ig.png"></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/NEU_PH_official"><i class=""></i><img src="img/usericon1.png"></a></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Neu.ph.official"><i class=""></i><img src="img/usericon1.png"></a></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXEnDGnw3poCdV7VL-8YJ7w"><i class=""></i><img src="img/usericon1.png"></a></a>
         </div>
         <div class="backToMain col-6 text-right">
            <a href="https://www.neu.edu.ph/main/"><span>BACK TO MAIN WEBSITE</span> <span class="fas fa-home"></span></a>
@@ -240,6 +259,24 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/mdb.min.js"></script> -->
+    <script>
+    var slideIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName(" carousel-item active");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+   
+</script>
 
 </body>
+
 </html>
