@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
+
 :root {
 
 /* SERVICES SECTION COLORS */
@@ -11,18 +12,57 @@
     --isp-color: #E33E1B;
 }
 
+@font-face {
+    font-family: avenirNextLTPro-Bold;
+    src: url(Resources/font/AvenirNextLTPro-Bold.otf);
+  }
+@font-face {
+    font-family: avenirNextLTPro-Regular;
+    src: url(Resources/Fonts/Avenir.ttc);
+}
+@font-face {
+    font-family: avenirNext;
+    src: url(Resources/Fonts/Avenir\ Next.ttc);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 95vw;
+    margin: auto;
+}
+
 .navbar {
     box-shadow: 0 0 0 0;
-    font-family: 'Source Code Pro',sans-serif;
-    font-size: min(2vw, 20px);
+    font-family: avenirNextLTPro-Regular;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    letter-spacing: 3px;
+    
+
+}
+.text-left{
+    display: flex;
+    font-family: avenirNextLTPro-Regular;
+    font-size: 17px;
+    font-weight: 600;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    
 }
 
 .navbar-nav {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin: auto;
+    white-space: nowrap;
 }
 
 .navbar img {
-    width: min(5vw, 100px);
+    width: min(5vw, 150px);
 }
 
 .saas .nav-link:hover {
@@ -42,31 +82,39 @@
 }
 
 .welcome .wlcmHeader {
+    display: flex;
     text-align: center;
-    font-size: min(6vw, 5em);
-    font-family: 'Bebas Neue';
+    justify-content: center;
+    font-size: min(6vw, 3.5em);
+    font-family: 'Bebas Neue', cursive;
     border-bottom: min(1vw,5px) solid black;
     white-space: nowrap;
+    width: 90%;
 }
 
 .welcome .wlcmtxt {
     text-align: justify;
+    text-transform: none;
     margin-top: min(2vw, 25px);
-    font-size: min(1.5vw,1.em);
-    font-family: 'Source Code Pro',sans-serif;
+    font-size: min(1.5vw,0.8em);
+    line-height: 30px;
+    font-family: avenirNextLTPro-Bold;
     width: 90%;
 }
 
+
 .services {
+    position: relative;
     scroll-margin-top: 50px;
     text-align: center;
     color: white;
-    margin-bottom: min(25vw, 300px);
+    margin-bottom: min(25vw, 250px);
+    
 }
 
 .services .col-4 {
     height: min(35vw, 400px);
-    width: 400px;
+    width: 400x;
 }
 
 /* .services i {
@@ -76,11 +124,38 @@
 } */
 
 .services img {
+    position: absolute ;
     margin-top: min(18vw, 200px);
     transform: translateY(-50%);
-    height: min(20vw,250px);
-   
+    height: min(20vw,200px);
+    bottom: 40px;
+    right: 112px;
 }
+
+.servicename3{
+    position: absolute;
+    top: 310px;
+    font-family: avenirNextLTPro-Regular;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.servicename2{
+    position: absolute;
+    top: 320px;
+    left: 110px;
+    font-family: avenirNextLTPro-Regular;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.servicename1{
+    position: absolute;
+    top: 320px;
+    left: 100px;
+    font-family: avenirNextLTPro-Regular;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 
 .services .sws {
     background-color: var(--sws-color);
@@ -256,11 +331,25 @@
     font-family: 'Bebas Neue';
     font-size: min(8.5vw, 6.5em);
     white-space: nowrap;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    
 }
 
-.hunterNews p {
-    font-family: 'Poppins';
-    font-size: min(1.5vw, 1em);
+.par1 {
+    font-family: avenirNext;
+    font-size: min(1.5vw, 2em);
+    line-height: 25px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+.par2 {
+    font-family: avenirNextLTPro-Regular;
+    font-size: min(1.5vw, 13px);
+    line-height: 25px;
+    font-weight: 600;
+    word-spacing: 2px;
+    letter-spacing: 2px;
 }
 
 .newsletter {
@@ -339,15 +428,17 @@
 }
 
 .social i {
-    
-    margin-right: min(5vw, 50px);
+    margin-right: min(2vw, 30px);
     font-size: min(4vw, 2em);
 }
 
 .backToMain {
     display: inline;
-    font-family: 'Bebas Neue';
-    font-size: min(2.5vw, 1.5em);
+    font-family: avenirNext;
+    font-size: min(2.5vw, 1.4em);
+    letter-spacing: 2px;
+    word-spacing: 2px;
+
 }
 
 .backToMain .fas {
@@ -362,40 +453,49 @@
     /* background-color: #006a4e; */
     background-image: url("img/University\ Information\ bg\ fix.png");
     background-size: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-size: min(1.5vw, 13px);
+    font-family: avenirNextLTPro-Regular;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 14px;
     padding-top: min(1.5vw, 15px);
-    max-width: 1080px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    min-height: 290px;
 }
 
 .page-footer img {
+    display: flex;
     width: 18vw;
-    max-width: 160px;
-    margin-top: min(3vw, 30px);
+    max-width: 210px;
+    padding-top: 50px;
     margin-bottom: min(1.5vw, 15px);
 }
 
 .page-footer .address {
-    border-left: min(.5vw, 5px) solid white;
-    margin: auto;
-    margin-left: 0;
-    padding-top: min(2vw, 10px);
-    padding-left: 2vw;
+    border-left: 8px solid white;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    padding-left: 3vw;
+
 }
 
 .page-footer .address p {
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .page-footer .branch {
+    padding-top: 60px;
     margin-top: min(3vw, 30px);
     padding-right: min(1.5vw, 15px);
 }
 
 .page-footer .branch h5 {
     margin-bottom: 0px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: avenirNextLTPro-Regular;
+    font-weight: 600;
     font-size: min(2vw, 1.5em);
 }
