@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://www.w3schools.com/w3css/4/w3.css');
+
 
 *
 
@@ -190,7 +190,6 @@ header .SAAS:hover a{
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: bold;
-    border-bottom: min(1vw,6px) solid gray;
     padding-bottom: 24px;
 
 }
