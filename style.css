@@ -104,17 +104,15 @@
 
 
 .services {
-    position: relative;
     scroll-margin-top: 50px;
     text-align: center;
     color: white;
-    margin-bottom: min(25vw, 250px);
-    
+    margin-bottom: min(25vw, 300px);
 }
 
 .services .col-4 {
     height: min(35vw, 400px);
-    width: 400x;
+    width: 400px;
 }
 
 /* .services i {
@@ -123,18 +121,20 @@
     font-size: min(20vw, 10em);
 } */
 
+
 .services img {
     position: absolute ;
     margin-top: min(18vw, 200px);
     transform: translateY(-50%);
     height: min(20vw,200px);
     bottom: 40px;
-    right: 112px;
+    right: 140px;
 }
 
 .servicename3{
     position: absolute;
-    top: 310px;
+    top: 300px;
+    left:160px;
     font-family: avenirNextLTPro-Regular;
     font-weight: 600;
     letter-spacing: 1px;
@@ -142,7 +142,7 @@
 .servicename2{
     position: absolute;
     top: 320px;
-    left: 110px;
+    left: 140px;
     font-family: avenirNextLTPro-Regular;
     font-weight: 600;
     letter-spacing: 1px;
@@ -150,7 +150,7 @@
 .servicename1{
     position: absolute;
     top: 320px;
-    left: 100px;
+    left: 130px;
     font-family: avenirNextLTPro-Regular;
     font-weight: 600;
     letter-spacing: 1px;
