@@ -1,10 +1,9 @@
-@import url('https://www.w3schools.com/w3css/4/w3.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *
 
 body{
-    
-    margin:0;
-   
+    margin-top: 40px;
 }
 
 @font-face{
@@ -13,11 +12,48 @@ body{
     src: url("Resources/Fonts/Avenir Next.ttc")
     src: url("Resources/Fonts/Avenir.ttc")
 }
+@font-face {
+    font-family: avenirNextLTPro-Regular;
+    src: url(Resources/font/AvenirNextLTPro-Regular.otf);
+  }
+@font-face {
+    font-family: avenirNextLTPro-Bold;
+    src: url(Resources/font/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+    font-family: avenirNextLTPro-Reg;
+    src: url(Resources/Fonts/Avenir.ttc);
+}
+/*---------- Header ----------*/
+/*---------- Header ----------*/
+/*---------- Header ----------*/
 
 
-/*---------- Header ----------*/
-/*---------- Header ----------*/
-/*---------- Header ----------*/
+.text-left{
+    display: flex;
+    font-family: avenirNextLTPro-Regular;
+    font-size: 22px;
+    font-weight: 900;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+    white-space: nowrap;
+}
+.text-right {
+    font-family: avenirNextLTPro-Bold;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    max-width: 20vw;
+    margin-left: 80px;
+}
+
+
+
+
+
+
+
 
 .header{
     
@@ -41,7 +77,7 @@ header .SAAS{
     margin-top: auto;
     margin-bottom: auto;
     text-align: left;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: sans-serif;
     white-space: nowrap;
 }
@@ -106,17 +142,19 @@ header .SAAS:hover a{
     grid-auto-rows: 50%;
     /*border:1px solid;*/
     /*box-shadow: 0 3px 4px rgba(0,0,0,0.1); */ 
-    
+    margin-top: 75px;
+    margin-bottom: 80px;
+     
 }
 
 .ILogo{
     
     display: block;
-    margin-top: 10%;
+    margin-top: 15%;
     margin-bottom: 10%;
     margin-left: 21%;
     margin-right: auto;
-    max-width: 55%;
+    max-width: 60%;
     max-height: auto;
     
 }
@@ -133,14 +171,27 @@ header .SAAS:hover a{
 }
 
 .h1{
-    
-    font-size: 1.7vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'Bebas Neue', cursive;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    border-bottom: min(1vw,6px) solid gray;
     
 }
 
 .h2{
     
-    font-size: 1.3vw;
+    font-family: avenirNextLTPro-Regular;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-bottom: min(1vw,6px) solid gray;
+    padding-bottom: 24px;
+
 }
 
 hr.rec1, hr.rec2{
@@ -166,7 +217,7 @@ hr.rec1, hr.rec2{
 .Section2{
     
     display:grid;
-    grid-template-columns: 50% 60%;
+    grid-template-columns: 55% 45%;
     grid-column-gap: 1px;
     grid-auto-rows: 50%;
     /*border:1px solid;*/
@@ -179,7 +230,7 @@ hr.rec1, hr.rec2{
     text-align: center;
     font-size: 1.3vw;
     font-family: sans-serif;
-   border: 1% solid black;
+    border: 1% solid black;
     
 }
 
@@ -199,7 +250,7 @@ hr.rec1, hr.rec2{
 .S2C1 li{
     
     list-style: none;
-    line-height: 550%;
+    line-height: 700%;
     
     
 }
@@ -229,14 +280,10 @@ hr.rec1, hr.rec2{
 .ImgCont{
     
     text-align: center;
-    margin: auto;
+    margin:auto;
     width: auto;
     height: auto;
-    position: relative;
-    top: 80px;
-    left: 70px;
-    width: 630px;
-    height: 430px;
+    border: 1px solid black;
     
     
 }
