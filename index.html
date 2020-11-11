@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/flickity.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -41,9 +42,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#hunterNews">NEWS</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">LOG-IN</a>
-                </li>
             </ul>
         <!-- </div> -->
     </nav>
@@ -53,12 +51,7 @@
             <div class="msg animated fadeIn slow col-6">
                 <span class="wlcmHeader">WELCOME HUNTERS</span>
                 <p class="wlcmtxt">
-                    This is the Students Affairs and Services website of New Era University where you can access everything from the admissions to
-                    your student organizations, all in one place.
-                </p>
-                <p class="wlcmtxt">
-                    Accompanied with a welcoming environment, NEU ensures you to be well acquainted with your campus life and 
-                    to have a wonderful stay in the university.
+                    Lorem ipis dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
                 </p>
 
             </div>
@@ -79,7 +72,7 @@
     <div class="row">
         <div class="sws col-4">
             <img src="img/usericon1.png">
-            <div class="servicename1">STUDENT WELFARE SERVICES</div>
+            <div class="serviceLabel"><p>STUDENT WELFARE<br> SERVICES</p></div>
             <div class="swsTip service-container z-depth-2">
                 <ul>
                     <li><a href="1.1.html">1.1 Information and Orientation Services</a></li>
@@ -93,7 +86,7 @@
         </div>
         <div class="sd col-4">
             <img src="img/usericon2.png">
-            <div class="servicename2">STUDENT DEVELOPMENT</div>
+            <div class="serviceLabel"><p><br>STUDENT DEVELOPMENT</p></div>
             <div class="sdTip service-container z-depth-2">
                 <ul>
                     <li><a href="2.1.html">2.1 Student Organizations and Activities</a></li>
@@ -107,7 +100,7 @@
         </div>
         <div class="isp col-4">
             <img src="img/usericon3.png">
-            <div class="servicename3">INSTITUTIONAL<br> STUDENT PROGRAMS<br> AND SERVICES</div>
+            <div class="serviceLabel"><p>INSTITUTIONAL <br> STUDENT PROGRAMS <br> AND SERVICES</p></div>
             <div class="ispTip service-container z-depth-2">
                 <ul>
                     <li><a href="3.1.html">3.1 Admission Services</a></li>
@@ -132,7 +125,7 @@
     <div class="row">
         <div class="col-7">
             <h1>HUNTERS NEWS</h1>
-            <p class="par1">
+            <p>
                 Lorem ipis dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             </p>
         </div>
@@ -147,7 +140,7 @@
     <div class="row announcements">
         <div class="prioAnnouncement col-5">
             <img src="img/neu-phlsat.jpg" width="100%" alt="">
-            <p class="par2">
+            <p>
                 Lorem ipis dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna
             </p>
         </div>
@@ -185,15 +178,28 @@
     </div>
     <div class="row">
         <div class="social col-6">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/BdKduGtg6Se/"><img src="img/ig.png"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/NEU_PH_official"><img src="img/twitter.png"></a></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Neu.ph.official"></i><img src="img/fb.png"></a></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXEnDGnw3poCdV7VL-8YJ7w"></i><img src="img/youtube.png"></a></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/p/BdKduGtg6Se/"><img src="img/ig.png" alt=""></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/NEU_PH_official"><img src="img/twitter.png" alt=""></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Neu.ph.official"><img src="img/fb.png" alt=""></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCXEnDGnw3poCdV7VL-8YJ7w"><img src="img/youtube.png" alt=""></a>
         </div>
         <div class="backToMain col-6 text-right">
            <a href="https://www.neu.edu.ph/main/"><span>BACK TO MAIN WEBSITE</span> <span class="fas fa-home"></span></a>
         </div>
     </div>
+</div>
+
+<div class="upcomingEvents">
+    <p>UPCOMING EVENTS</p>
+    <div class="gallery js-flickity" data-flickity='{"initialIndex": 1, "pageDots": false, "setGallerySize": false, "selectedAttraction": 0.005, "friction" : "0.25"}'>
+        <div class="gallery-cell"><img src="img/events.png" alt=""></div>
+        <div class="gallery-cell"><img src="img/events.png" alt=""></div>
+        <div class="gallery-cell"><img src="img/events.png" alt=""></div>
+      </div>
+</div>
+
+<div class="prevEvents">
+    <p>PREVIOUS EVENTS</p>
 </div>
 
 </div>
@@ -247,10 +253,10 @@
 
 </footer>
 
-    <!-- <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/mdb.min.js"></script> -->
-
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
 </body>
 </html>
