@@ -97,7 +97,7 @@
         
             <p class = "h1">CULTURAL ARTS PROGRAMS</p>
             <hr class = "rec1" color ="#006a4e ">
-            <p class = "h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p class = "h2">Do you have a thing for the arts that you want to share to the public? Or perhaps you want to try something new? New Era University has a host of art-related programs and clubs.</p>
             <hr class = "rec2" color ="#a81c07">
         
         </div>
@@ -107,17 +107,23 @@
     
     
     
-    <div class = "section2">
+    <div class = "Section2">
     
     
-        
-       <div class = "ImgCont">
-            <img src="Resources\images\secB.png" class="sec B">
-        
-        </div>
-        
-        
-        
+     
+        <div class = "ImgCont">
+          
+                <div class="secB-container">
+                
+                <img class="mySlides" src="Resources/images/secB.png" style="width:100%">
+                <img class="mySlides" src="Resources/images/neu1.jfif" style="width:100%">
+            </div>
+                <div class="button">
+                     <button class="btnleft" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="btnright" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+             </div>
+      
         <div class = "S2C1">
         <b>
             <li><a href = "#" class = "c11">DEPARTMENT: OSAS</a></li>
@@ -125,20 +131,11 @@
             <li><a href = "#"  class = "c13">&#128222; &nbsp;+09961234567</a></li>
             <li><a href = "#" class = "c14">&#9993; &nbsp;Johndoe@neu.edu</a></li>
         </b>
-        
-        </div>
-    
-    
-    
-    
-    
+         </div>
     </div>
+</div>
     
-    
-    
-    
-    
-    
+
     
     <div class = "section3">
         
@@ -231,5 +228,26 @@
         </div>
     
     </footer>
-</body>
-</html>
+   <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+    </body>
+    </html>
+    
