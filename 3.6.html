@@ -103,21 +103,23 @@
         </div>
     
     </div>
+  <div class = "Section2">
     
     
-    
-    
-    <div class = "section2">
-    
-    
-        
-       <div class = "ImgCont">
-            <img src="Resources\images\secB.png" class="sec B">
-        
-        </div>
-        
-        
-        
+     
+        <div class = "ImgCont">
+          
+                <div class="secB-container">
+                
+                <img class="mySlides" src="Resources/images/secB.png" style="width:100%">
+                <img class="mySlides" src="Resources/images/neu1.jfif" style="width:100%">
+            </div>
+                <div class="button">
+                     <button class="btnleft" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="btnright" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+             </div>
+      
         <div class = "S2C1">
         <b>
             <li><a href = "#" class = "c11">DEPARTMENT: OSAS</a></li>
@@ -125,18 +127,9 @@
             <li><a href = "#"  class = "c13">&#128222; &nbsp;+09961234567</a></li>
             <li><a href = "#" class = "c14">&#9993; &nbsp;Johndoe@neu.edu</a></li>
         </b>
-        
-        </div>
-    
-    
-    
-    
-    
+         </div>
     </div>
-    
-    
-    
-    
+</div>
     
     
     
@@ -231,5 +224,26 @@
         </div>
     
     </footer>
-</body>
-</html>
+   <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+    </body>
+    </html>
+    
