@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
-
 :root {
 
 /* SERVICES SECTION COLORS */
@@ -12,57 +11,18 @@
     --isp-color: #E33E1B;
 }
 
-@font-face {
-    font-family: avenirNextLTPro-Bold;
-    src: url(Resources/font/AvenirNextLTPro-Bold.otf);
-  }
-@font-face {
-    font-family: avenirNextLTPro-Regular;
-    src: url(Resources/Fonts/Avenir.ttc);
-}
-@font-face {
-    font-family: avenirNext;
-    src: url(Resources/Fonts/Avenir\ Next.ttc);
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 95vw;
-    margin: auto;
-}
-
 .navbar {
     box-shadow: 0 0 0 0;
-    font-family: avenirNextLTPro-Regular;
-    font-size: 11.5px;
-    font-weight: 600;
-    letter-spacing: 4px;
-    letter-spacing: 3px;
-    
-
-}
-.text-left{
-    display: flex;
-    font-family: avenirNextLTPro-Regular;
-    font-size: 17px;
-    font-weight: 600;
-    word-spacing: 4px;
-    letter-spacing: 3px;
-    white-space: nowrap;
-    
+    font-family: 'Source Code Pro', monospace;
+    font-size: min(2vw, 15px);
 }
 
 .navbar-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
-    margin: auto;
-    white-space: nowrap;
+    flex-direction: row;
 }
 
 .navbar img {
-    width: min(5vw, 150px);
+    width: min(5vw, 40px);
 }
 
 .saas .nav-link:hover {
@@ -82,32 +42,39 @@
 }
 
 .welcome .wlcmHeader {
-    display: flex;
     text-align: center;
-    justify-content: center;
-    font-size: min(6vw, 3.5em);
-    font-family: 'Bebas Neue', cursive;
+    font-size: min(6vw, 5em);
+    font-family: 'Bebas Neue';
     border-bottom: min(1vw,5px) solid black;
     white-space: nowrap;
-    width: 90%;
 }
 
 .welcome .wlcmtxt {
     text-align: justify;
-    text-transform: none;
     margin-top: min(2vw, 25px);
-    font-size: min(1.5vw,0.8em);
-    line-height: 30px;
-    font-family: avenirNextLTPro-Bold;
+    font-size: min(1.5vw,1.2em);
+    font-family: 'Cutive Mono', monospace;
     width: 90%;
 }
-
 
 .services {
     scroll-margin-top: 50px;
     text-align: center;
     color: white;
     margin-bottom: min(25vw, 300px);
+}
+
+.serviceLabel {
+    width: max-content;
+    text-align: center;
+    font-size: min(2vw, 20px);
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    transform: translateX(-50%);
+    line-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 75%;
 }
 
 .services .col-4 {
@@ -121,41 +88,11 @@
     font-size: min(20vw, 10em);
 } */
 
-
 .services img {
-    position: absolute ;
-    margin-top: min(18vw, 200px);
+    margin-top: min(13vw, 150px);
     transform: translateY(-50%);
-    height: min(20vw,200px);
-    bottom: 40px;
-    right: 140px;
+    height: min(20vw,250px);
 }
-
-.servicename3{
-    position: absolute;
-    top: 300px;
-    left:160px;
-    font-family: avenirNextLTPro-Regular;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.servicename2{
-    position: absolute;
-    top: 320px;
-    left: 140px;
-    font-family: avenirNextLTPro-Regular;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.servicename1{
-    position: absolute;
-    top: 320px;
-    left: 130px;
-    font-family: avenirNextLTPro-Regular;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
 
 .services .sws {
     background-color: var(--sws-color);
@@ -331,25 +268,11 @@
     font-family: 'Bebas Neue';
     font-size: min(8.5vw, 6.5em);
     white-space: nowrap;
-    word-spacing: 4px;
-    letter-spacing: 3px;
-    
 }
 
-.par1 {
-    font-family: avenirNext;
-    font-size: min(1.5vw, 2em);
-    line-height: 25px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-}
-.par2 {
-    font-family: avenirNextLTPro-Regular;
-    font-size: min(1.5vw, 13px);
-    line-height: 25px;
-    font-weight: 600;
-    word-spacing: 2px;
-    letter-spacing: 2px;
+.hunterNews p {
+    font-family: 'Poppins';
+    font-size: min(1.5vw, 1em);
 }
 
 .newsletter {
@@ -427,18 +350,15 @@
     padding-left: 0;
 }
 
-.social i {
+.social img {
     margin-right: min(2vw, 30px);
-    font-size: min(4vw, 2em);
+    width: min(5vw,50px);
 }
 
 .backToMain {
     display: inline;
-    font-family: avenirNext;
-    font-size: min(2.5vw, 1.4em);
-    letter-spacing: 2px;
-    word-spacing: 2px;
-
+    font-family: 'Bebas Neue';
+    font-size: min(2.5vw, 1.5em);
 }
 
 .backToMain .fas {
@@ -449,53 +369,99 @@
     color: black;
 }
 
+.upcomingEvents, .prevEvents {
+    background-color: #2d2d2d;
+    height: 350px;
+    max-width: 1080px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.upcomingEvents p, .prevEvents p{
+    margin-left: min(2vw,25px);
+    padding-top: min(1vw,15px);
+    font-size: min(5vw,50px);
+    font-family: 'Bebas Neue';
+    color: white;
+}
+
+.upcomingEvents img {
+    width: 100%;
+}
+
+  .gallery {
+      height: 60%;
+  }
+
+  .gallery-cell {
+    width: 200px;
+    margin-top: 25px;
+    margin-right: 125px;
+    opacity: 40%;
+    transform: translateY(3%);
+    object-fit: cover;
+  }
+
+  .gallery-cell.is-selected {
+    opacity: 100%;
+    transform: scale(1.25);
+    transition: transform 1s;
+  }
+
+  .flickity-button {
+    background: transparent;
+  }
+
+  .flickity-button:hover {
+      background: transparent;
+  }
+
+  .flickity-button-icon {
+      fill: white;
+  }
+
+  .flickity-prev-next-button:disabled {
+    display: none;
+  }
+
 .page-footer {
     /* background-color: #006a4e; */
     background-image: url("img/University\ Information\ bg\ fix.png");
     background-size: 100%;
-    font-family: avenirNextLTPro-Regular;
-    letter-spacing: 2px;
-    font-weight: 600;
-    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: min(1.5vw, 13px);
     padding-top: min(1.5vw, 15px);
-    max-width: 100%;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 290px;
 }
 
 .page-footer img {
-    display: flex;
     width: 18vw;
-    max-width: 210px;
-    padding-top: 50px;
+    max-width: 160px;
+    margin-top: min(3vw, 30px);
     margin-bottom: min(1.5vw, 15px);
 }
 
 .page-footer .address {
-    border-left: 8px solid white;
-    text-align: left;
-    font-size: 15px;
-    margin-top: 60px;
-    margin-bottom: 40px;
-    padding-top: 60px;
-    padding-left: 3vw;
-
+    border-left: min(.5vw, 5px) solid white;
+    margin: auto;
+    margin-left: 0;
+    padding-top: min(2vw, 10px);
+    padding-left: 2vw;
 }
 
 .page-footer .address p {
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .page-footer .branch {
-    padding-top: 60px;
     margin-top: min(3vw, 30px);
     padding-right: min(1.5vw, 15px);
 }
 
 .page-footer .branch h5 {
     margin-bottom: 0px;
-    font-family: avenirNextLTPro-Regular;
-    font-weight: 600;
+    font-family: 'Source Code Pro', monospace;
     font-size: min(2vw, 1.5em);
 }
