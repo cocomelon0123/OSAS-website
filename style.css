@@ -10,6 +10,19 @@
     --sd-color: #4D4F50;
     --isp-color: #E33E1B;
 }
+@font-face {
+    font-family: avenirNextLTPro-Bold;
+    src: url(Resources/font/AvenirNextLTPro-Bold.otf);
+  }
+@font-face {
+    font-family: avenirNextLTPro-Regular;
+    src: url(Resources/Fonts/Avenir.ttc);
+}
+@font-face {
+    font-family: avenirNext;
+    src: url(Resources/Fonts/Avenir\ Next.ttc);
+}
+
 
 .navbar {
     box-shadow: 0 0 0 0;
@@ -44,7 +57,7 @@
 .welcome .wlcmHeader {
     text-align: center;
     font-size: min(6vw, 5em);
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue',cursive;;
     border-bottom: min(1vw,5px) solid black;
     white-space: nowrap;
 }
@@ -53,7 +66,7 @@
     text-align: justify;
     margin-top: min(2vw, 25px);
     font-size: min(1.5vw,1.2em);
-    font-family: 'Cutive Mono', monospace;
+    font-family: avenirNextLTPro-Bold;
     width: 90%;
 }
 
