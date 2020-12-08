@@ -247,7 +247,13 @@ hr.rec1, hr.rec2{
     
 }
 
-
+.mySlides{
+   
+    padding-top: min(5vw, 10px);
+    padding-bottom: min(2vw,25px);
+    margin-top: min(1vw, 25px);
+    margin-bottom: min(1vw, 25px);
+}
 
 
 
