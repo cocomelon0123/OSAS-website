@@ -1,0 +1,249 @@
+/*START OF CSS FOR HEADER-BAR*/
+.header-bar{
+        background-image: linear-gradient(#0062dd, #0061ba);
+        padding-left: 5vw;
+        width:100%;
+}
+.header-bar-btn{
+        background:none;
+        color:white;
+        /*padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: 3px;
+        margin-bottom:3px;*/
+        border-radius:0px;
+        margin-left: 2px;
+        margin-right:1px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        -webkit-transition: background 0.5s; /* Safari */
+        transition: background 0.5s;
+}
+.header-bar-btn:hover{
+        background:#404247;
+        color:white;
+   
+}
+/*END OF CSS FOR HEADER-BAR*/
+
+/* START OF CSS FOR HEADER */
+@font-face {
+    font-family: 'shelleyallegro_btregular';
+    src: url('../fonts/shelley_allegro_bt-webfont.woff2') format('woff2'),
+         url('../fonts/shelley_allegro_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-logo {
+	background-color: #0066FF;
+        margin:0px;
+        padding:0px;
+        
+}
+
+.header-logo img {
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24%;
+}
+
+.nav-header {
+	background-color: #303030;
+}
+
+
+
+.affix {
+	top: 0;
+	width: 100%;
+	z-index: 9999 !important;
+} 
+
+.dropdown { position: relative;}
+
+
+#neu-navbar{
+        padding:0px;
+}
+
+.navbar{
+	background-color: #303030;   
+        border-radius: 0px;
+        min-height:auto;
+        height:auto;
+}
+    
+.navbar-default{
+        border:none;
+}
+
+.nav.navbar-nav > li > a {
+        border-bottom: 7px solid #303030;
+	padding: 10px 0px 3px 0px;
+	font-size: 14px ;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active {
+        color:white;
+        border-bottom: 7px solid #0066FF;
+        background-color: #303030;
+}
+
+.columns-1, .columns-1 > li > a {  background-color: #303030; }
+
+.columns-1 > li > a {
+        color: white;
+}
+
+.dropdown-menu.columns-2 {
+	min-width: 450px;
+        background-color: #303030;
+        padding-bottom:15px;
+        border:1px solid #303030;
+}
+
+.dropdown-menu.columns-1 {
+        border:1px solid #303030;
+}
+
+
+
+.dropdown-menu li a {
+	padding: 5px 10px;
+	font-weight: 300;
+}
+
+.multi-column-dropdown {
+	list-style: none;
+        margin: 0px;
+        padding: 0px;
+}
+
+
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: white;
+	white-space: normal;
+        font-size: 12px; 
+        padding:5px 0px 5px 10p;
+        margin:0px 10px 0px 10px;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #F4F6F6;
+}
+
+.left-side { padding-right:0px; padding-left:0px; }
+.columns-2 > .row > .col-sm-5{ padding-right: 0px; }
+
+.left-side li a {
+        margin-left: 30px;
+}
+
+.dropdown-header{
+        padding:0px;
+        color: #0066FF;
+        font-size: 12px;
+        margin:0px 0px 0px 0px;
+}
+
+.multi-column-dropdown .dropdown-header a {
+        padding: 5px 0px 5px 10px;
+        color: #0066FF;
+        font-size: 12px;
+        margin: 10px 10px 0px 10px;
+}
+
+.multi-column-dropdown.leftside .dropdown-header a {
+        padding: 10px 0px 10px 10px;
+}
+
+.multi-column-dropdown .dropdown-header-text {
+        padding: 15px 0px 10px 20px;
+        color: #0066FF;
+        font-size: 12px;
+}
+
+
+
+
+
+  
+  
+  /* GLOBAL CSS */
+.page-content{
+	margin-top: 200px ;
+        overflow:hidden;
+}
+
+.scrollbar-primary::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #4285F4; }
+  
+body {
+    font-family: 'Roboto', sans-serif;
+}
+  
+/* CSS FOR DIFF VIEW PORT*/
+/* md */
+@media (min-width: 768px){
+    .navbar-nav {
+        padding:0px;
+        display: table;
+        table-layout: fixed;
+        float: none;
+        width: 100%;
+        direction: ltr;
+        margin: 0;
+    }
+    
+    .navbar-nav>li {
+        float: right;
+        display: table-cell;
+        width: 100%;
+        float: none;
+        text-align: center;
+        direction: rtl;
+    }
+
+    .page-content{
+	margin-top: 230px ;
+  }
+} 
+
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+/* xs below 575 */
+@media screen and (max-width: 575px) {
+  .nav.navbar-nav > li > a {
+	padding: 10px 30px 3px 30px;
+  }
+  .header-logo img {
+     width: 60%;
+  }
+  .page-content{
+	margin-top: 180px ;
+  }
+}
+/* END OF CSS FOR HEADER */
